@@ -76,8 +76,14 @@ public class Aula03 {
         int b = sc.nextInt();
         
         int soma2 = 0;
-        for (int i = a; i <= b; i++) {
+        if (b>a) {
+            for (int i = a; i <= b; i++) {
             soma2 = soma2 + i;
+            }
+        } else if (a>b) {
+            for (int i = b; i <= a; i++) {
+            soma2 = soma2 + i;
+            }
         }
         
         System.out.println(soma2);
