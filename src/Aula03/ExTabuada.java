@@ -6,17 +6,23 @@ public class ExTabuada {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Digite a tabuada que deseja encontrar: ");
-        int tab = sc.nextInt();
+		char continuar = 's';
         
-        int i = 0;
-        while (i <= 10) {
-            int res = tab * i;
-            
-            System.out.println(tab+"*"+i+" = "+res);
-            
-            i++;
+        while (continuar == 's') {
+        	System.out.print("Digite a tabuada que deseja encontrar: ");
+        	int tab = sc.nextInt();
+        	
+        	sc.nextLine(); //limpando o buffer
+        	
+        	for (int i = 0; i <= 10; i++) {
+        		int res = tab * i;
+                
+                System.out.println(tab+"*"+i+" = "+res);
+        	}
+        	
+        	System.out.print("Deseja continuar? ");
+        	continuar = sc.next().charAt(0);
+        	
         }
 	}
 

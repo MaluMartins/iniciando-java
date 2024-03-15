@@ -12,11 +12,14 @@ public class ExFibonacci {
         
         int num1 = 0;
         int num2 = 1;
+        int soma = 0;
         
         for (int i = 0; i < n; i++) {
             num1 = num1 + num2;
             num2 = num1 - num2;
+            
+            soma = soma + num1;
         }
-        System.out.println(num1);
+        System.out.println(soma);
 	}
 }
