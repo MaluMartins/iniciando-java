@@ -24,7 +24,7 @@ public class ExNotas {
 			nomes[i] = nome;
 			for (int j = 0; j < 3; j++) {
 				System.out.print("Digite a "+(j+1)+"ª nota de "+nomes[i]+": ");
-				double nota = sc.nextInt();
+				double nota = sc.nextDouble();
 				medias[i] = medias[i] + nota;
 			}
 			medias[i] = medias[i]/3;

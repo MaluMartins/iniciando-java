@@ -18,13 +18,9 @@ public class ExRotacao {
 		System.out.print("Quantas vezes irá rotacionar o vetor? ");
 		int k = sc.nextInt();
 		
-		for (int i = 0; i<n; i++) {
-			vet[i] = i+1;
-		}
-		
-		for (int i = 0; i < k; i++) {
+		for (int i = 1; i <= k; i++) {
 			int mem = vet[n-1];
-			for (int j = 1; j < n; j++) {
+			for (int j = n-1; j > 0; j--) {
 				vet[j] = vet[j-1];
 			}
 			vet[0] = mem;
