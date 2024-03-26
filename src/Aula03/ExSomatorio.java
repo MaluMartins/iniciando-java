@@ -1,4 +1,4 @@
-package Aula03;
+package aula03;
 
 public class ExSomatorio {
 
